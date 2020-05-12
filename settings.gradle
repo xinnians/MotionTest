@@ -1,0 +1,3 @@
+rootProject.name='MotionTest'
+include ':app', ':fabbutton'
+include ':mylibrary'

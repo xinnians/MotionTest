@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f4f4f4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_66"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#f4f4f4">
+        
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_17"
+            android:src="@drawable/ic_arrow"
+            android:layout_marginStart="@dimen/dp_20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        
+        <ImageView
+            android:id="@+id/ivFace"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnBack"
+            android:layout_marginStart="@dimen/dp_15"
+            android:src="@drawable/ic_face"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_member_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFace">
+            
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_17"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="鑽石VIP"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_17"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvLevel"
+                android:layout_marginStart="@dimen/dp_8"
+                android:text="獎金組:1980"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLevel"
+                android:text="$ *************"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:textColor="#707070"/>
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ivGift"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:src="@drawable/ic_gift"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivMemner"
+            android:layout_marginEnd="@dimen/dp_12"
+            />
+
+        <ImageView
+            android:id="@+id/ivMemner"
+            android:layout_width="@dimen/dp_18"
+            android:layout_height="@dimen/dp_18"
+            android:src="@drawable/ic_member"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/dp_25"
+            />
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_row1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_toolbar"
+        android:background="#ffffff">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_row2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_row1"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#ffffff">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_row3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_row2"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="#ffffff">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_row4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_row5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="#ffffff">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_row5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#ffffff">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

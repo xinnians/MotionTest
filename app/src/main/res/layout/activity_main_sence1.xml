@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene_01"
+    android:id="@+id/motionLayout"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/tvHelloWorld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your name"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btnToStartScene"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:text="To Start Scene"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/btnToEndScene" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnToEndScene"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:text="To End Scene"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/btnToStartScene"-->
+<!--        app:layout_constraintRight_toRightOf="parent" />-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/bottomBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+<!--        <ImageView-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@mipmap/ic_launcher"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--    </FrameLayout>-->
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

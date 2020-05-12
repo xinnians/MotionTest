@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutAll"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.hanks.htextview.evaporate.EvaporateTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="default"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <mbanje.kurt.fabbutton.FabButton
+        android:id="@+id/btnFab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:color="#ff6e9cff"
+        android:visibility="visible"
+        android:indeterminate="true"
+        app:fbb_autoStart="true"
+        app:fbb_progressColor="#ff170aff"
+        app:fbb_progressWidthRatio="0.1"
+        app:fbb_endBitmap="@drawable/ic_fab_complete"
+        app:fbb_showEndBitmap="true"/>
+
+    <com.sackcentury.shinebuttonlib.ShineButton
+        android:id="@+id/btnShine"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:src="@android:color/darker_gray"
+        app:btn_color="@android:color/darker_gray"
+        app:btn_fill_color="#FF6666"
+        app:allow_random_color="false"
+        app:enable_flashing="false"
+        app:big_shine_color="#FF6666"
+        app:click_animation_duration="200"
+        app:shine_animation_duration="1500"
+        app:shine_turn_angle="10"
+        app:small_shine_offset_angle="20"
+        app:shine_distance_multiple="1.5"
+        app:small_shine_color="#CC9999"
+        app:shine_count="8"
+        app:siShape="@drawable/ic_done"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
